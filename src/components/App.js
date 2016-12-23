@@ -5,10 +5,11 @@ import Header from './Header'
 import Footer from './Footer'
 import Loading from './Loading'
 import User from './User'
+import Login from './Login'
 
 class App extends Component {
     constructor() {
-        super()
+        super();
 
         this.state = {
             isFetching: true,
@@ -33,6 +34,7 @@ class App extends Component {
         return (
             <div>
                 <Header/>
+                <Login/>
                 <hr/>
                 {this.renderContent()}
                 <hr/>
